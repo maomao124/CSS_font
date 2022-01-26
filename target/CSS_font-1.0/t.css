@@ -1,0 +1,170 @@
+/*
+  Project name(项目名称)：CSS_font 
+  File name(文件名): t
+  Author(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/1/26 
+  Time(创建时间)： 13:37
+  Version(版本): 1.0
+  Description(描述)：
+  font-family：设置字体；
+font-style：设置字体的风格，例如倾斜、斜体等；
+font-weight：设置字体粗细；
+font-size：设置字体尺寸；
+font-variant：将小写字母转换为小型大写字母；
+font-stretch：对字体进行伸缩变形（使用较少，并且主流浏览器都不支持）；
+font：字体属性的缩写，可以在一个声明中设置多个字体属性。
+
+1. font-family
+font-family 属性用来设置元素内文本的字体。由于字体的种类成千上万，而且有些还不是免费的，因此我们的电脑上几乎不可能拥有所有的字体。
+为了最大程度的保证我们设置的字体能够正常显示，可以通过 font-family 属性定义一个由若干字体名称组成的列表，字体名称之间使用逗号,分隔，
+浏览器会首先尝试列表中的第一个字体，如果不支持则尝试下一个，以此类推。
+值	            描述
+family-name、
+generic-family	family-name：字体名称，一个字体名称就代表一种字体，比如“微软雅黑”就是一种字体；
+generic-family：字体族，也就是某种类型的字体组合，一个字体族代表一种类型的字体，其中包含很多相似但又不同的字体，比如“sans-serif”就是一种无衬线字体，其中包含很多种相似的字体。
+字体的默认值取决于浏览器设置
+inherit	从父元素继承字体的设置
+
+字体族	说明	                                        字体
+serif	有衬线字体，即在文字笔画的结尾添加特殊的装饰线或衬线	"Lucida Bright"、"Lucida Fax"、Palatino、"Palatino Linotype"、Palladio、"URW Palladio"、serif
+sans-serif	无衬线字体，即在文字笔画结尾处是平滑的	"Open Sans"、"Fira Sans"、"Lucida Sans"、"Lucida Sans Unicode"、"Trebuchet MS"、"Liberation Sans"、"Nimbus Sans L"、sans-serif
+monospace	等宽字体，即每个文字的宽度都是相同的	"Fira Mono"、"DejaVu Sans Mono"、Menlo、Consolas、"Liberation Mono"、Monaco、"Lucida Console"、monospace
+cursive	草书字体，该字体有连笔或者特殊的斜体效果，会给人一种手写的感觉	"Brush Script MT"、"Brush Script Std"、"Lucida Calligraphy"、"Lucida Handwriting"、"Apple Chancery"、cursive
+fantasy	具有特殊艺术效果的字体	Papyrus、Herculanum、"Party LET"、"Curlz MT"、Harrington、fantasy
+
+
+2. font-style
+font-style 属性用来设置字体的样式，例如斜体、倾斜等
+值	描述
+normal	默认值，文本以正常字体显示
+italic	文本以斜体显示
+oblique	文本倾斜显示
+inherit	从父元素继承字体样式
+
+
+3. font-weight
+font-weight 属性能够设置字体的粗细
+值	        描述
+normal	默认值，标准字体
+bold	粗体字体
+bolder	更粗的字体
+lighter	更细的字体
+100、200、300、400、500、600、700、800、900	由细到粗的设置字体粗细，100 为最细的字体，400 等同于 normal，700 等同于 bold
+inherit	从父元素继承字体的粗细
+
+
+4. font-size
+font-size 属性用来设置字体的大小（字号）
+值	        描述
+xx-small、x-small、small、medium、large、x-large、xx-large	以关键字的形式把字体设置为不同的大小，从 xx-small 到 xx-large 依次变大，默认值为 medium
+smaller	为字体设置一个比父元素更小的尺寸
+larger	为字体设置一个比父元素更大的尺寸
+length	以数值加单位的形式把字体设置为一个固定尺寸，例如 18px、2em
+%	以百分比的形式为字体设置一个相对于父元素字体的大小
+inherit	从父元素继承字体的尺寸
+
+
+5. font-variant
+font-variant 属性可以将文本中的小写英文字母转换为小型大写字母（转换后的大写字母与转换前小写字母的大小相仿，所以称之为小型大写字母）
+值	描述
+normal	默认值，浏览器会显示一个标准的字体
+small-caps	将文本中的小写英文字母转换为小型大写字母
+inherit	从父元素继承 font-variant 属性的值
+
+ */
+
+
+body {
+    font-style: oblique;
+}
+
+.normal {
+    font-style: normal;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+.inherit {
+    font-style: inherit;
+}
+
+
+p.weight-100 {
+    font-weight: 100;
+}
+
+p.weight-200 {
+    font-weight: 100;
+}
+
+p.normal {
+    font-weight: normal;
+}
+
+p.bold {
+    font-weight: bold;
+}
+
+p.bolder {
+    font-weight: bolder;
+}
+
+
+.xx_small {
+    font-size: xx-small;
+}
+
+.x_small {
+    font-size: x-small;
+}
+
+.small {
+    font-size: x-small;
+}
+
+.medium {
+    font-size: x-small;
+}
+
+.large {
+    font-size: large;
+}
+
+.x-large {
+    font-size: x-large;
+}
+
+.xx-large {
+    font-size: xx-large;
+}
+
+.smaller {
+    font-size: smaller;
+}
+
+.larger {
+    font-size: larger;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+
+.normal {
+    font-size: 48px;
+    font-variant: normal
+}
+.small {
+    font-size: 48px;
+    font-variant: small-caps
+}
+    
